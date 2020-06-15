@@ -1,0 +1,34 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run build
+      - run: npm run test
+
+  release:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+      - run: npm i
+      - run: npm run build
+      - run: npx semantic-release
+
+workflows:
+  version: 2
+  mock:
+    jobs:
+      - test
+  # semantic-release:
+  #   jobs:
+  #     - test
+  #     - release:
+  #         filters:
+  #           branches:
+  #             only: master
+  #         requires:
+  #           - test

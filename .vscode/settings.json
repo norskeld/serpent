@@ -1,0 +1,38 @@
+{
+  "editor.rulers": [100],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.enable": true,
+  "[typescript]": {
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "files.associations": {
+    ".commitlintrc": "json",
+    ".lintstagedrc": "json",
+    ".prettierrc": "json",
+    ".huskyrc": "json"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["/tsconfig.*.json"],
+      "url": "http://json.schemastore.org/tsconfig"
+    },
+    {
+      "fileMatch": ["/.huskyrc", "/.huskyrc.json"],
+      "url": "http://json.schemastore.org/huskyrc"
+    },
+    {
+      "fileMatch": ["/.prettierrc", "/.prettierrc.json"],
+      "url": "http://json.schemastore.org/prettierrc"
+    },
+    {
+      "fileMatch": ["/.lintstagedrc", "/.lintstagedrc.json"],
+      "url": "http://json.schemastore.org/lintstagedrc.schema"
+    }
+  ]
+}

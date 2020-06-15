@@ -1,0 +1,79 @@
+{
+  "name": "@arcdelta/serpent",
+  "version": "1.0.0",
+  "description": "Yet another TypeScript library starter with conventional goodies and automatic semantic releases.",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "cz": "git-cz",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prebuild": "rimraf dist",
+    "test": "jest",
+    "test:coverage": "jest --coverage=true",
+    "test:watch": "jest --watch",
+    "style": "npm run style:format && npm run style:lint",
+    "style:format": "prettier --write \"**/*.{js,ts,json}\"",
+    "style:lint": "eslint src --ext .js,.ts --fix",
+    "release": "npx semantic-release",
+    "release:dry": "npx semantic-release --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcdelta/serpent.git"
+  },
+  "keywords": [
+    "starter",
+    "library",
+    "typescript",
+    "jest",
+    "eslint",
+    "prettier",
+    "husky",
+    "lint-staged",
+    "commitizen",
+    "commitlint",
+    "semantic-release",
+    "editorconfig",
+    "circleci"
+  ],
+  "author": {
+    "name": "Vladislav Mamon",
+    "email": "hello@arcdelta.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arcdelta/serpent/issues"
+  },
+  "homepage": "https://github.com/arcdelta/serpent#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^12.12.44",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.10",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.0.8",
+    "ts-jest": "^26.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

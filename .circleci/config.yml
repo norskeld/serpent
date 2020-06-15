@@ -20,15 +20,12 @@ jobs:
 
 workflows:
   version: 2
-  mock:
+  semantic-release:
     jobs:
       - test
-  # semantic-release:
-  #   jobs:
-  #     - test
-  #     - release:
-  #         filters:
-  #           branches:
-  #             only: master
-  #         requires:
-  #           - test
+      - release:
+          filters:
+            branches:
+              only: master
+          requires:
+            - test

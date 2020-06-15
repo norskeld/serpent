@@ -37,7 +37,7 @@ You'll have to make some changes first. (Maybe I'll automate this with some `pos
 
 - [README.md](README.md): change as you want, you may want to check [this site](https://www.makeareadme.com/) and [this awesome-readme list](https://github.com/matiassingers/awesome-readme) for examples of good readmes.
 - [package.json](package.json): change `name`, `description`, `repository.url`, `keywords`, `author`, `bugs.url`, `homepage`.
-- [CircleCI config](.circleci/config.yml): either remove this or change as you need. Don't forget to uncomment the `semantic-release` workflow in the end, otherwise releases will not work).
+- [CircleCI config](.circleci/config.yml): either remove this or change as you need.
 
 ## Badges
 

@@ -5,6 +5,10 @@
 
 Yet another TypeScript library starter with conventional goodies and automatic semantic releases.
 
+## Usage
+
+Create your own repo [using this one as a template](https://github.com/arcdelta/serpent/generate), clone it, [make necessary changes](#edits), install dependencies and you are set.
+
 ## Features
 
 What's inside:

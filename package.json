@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arcdelta/serpent.git"
+    "url": "git+https://github.com/norskeld/serpent.git"
   },
   "keywords": [
     "starter",
@@ -47,9 +47,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arcdelta/serpent/issues"
+    "url": "https://github.com/norskeld/serpent/issues"
   },
-  "homepage": "https://github.com/arcdelta/serpent#readme",
+  "homepage": "https://github.com/norskeld/serpent#readme",
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",

@@ -17,10 +17,6 @@
       "url": "http://json.schemastore.org/tsconfig"
     },
     {
-      "fileMatch": ["/.huskyrc", "/.huskyrc.json"],
-      "url": "http://json.schemastore.org/huskyrc"
-    },
-    {
       "fileMatch": ["/.prettierrc", "/.prettierrc.json"],
       "url": "http://json.schemastore.org/prettierrc"
     },

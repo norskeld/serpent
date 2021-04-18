@@ -19,7 +19,8 @@
     "style:format": "prettier --write \"**/*.{js,ts,json}\"",
     "style:lint": "eslint src --ext .js,.ts --fix",
     "release": "npx semantic-release",
-    "release:dry": "npx semantic-release --dry-run"
+    "release:dry": "npx semantic-release --dry-run",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",

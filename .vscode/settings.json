@@ -11,12 +11,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "files.associations": {
-    ".commitlintrc": "json",
-    ".lintstagedrc": "json",
-    ".prettierrc": "json",
-    ".huskyrc": "json"
-  },
   "json.schemas": [
     {
       "fileMatch": ["/tsconfig.*.json"],

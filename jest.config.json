@@ -1,6 +1,6 @@
 {
   "preset": "ts-jest",
-  "testMatch": ["<rootDir>/src/**/__tests__/**/*spec.ts"],
+  "testMatch": ["**/__tests__/**/*.ts", "**/?(*.)+(spec|test).ts"],
   "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
   "coverageDirectory": "coverage",
   "coverageReporters": ["html", "lcov", "text"],
@@ -10,7 +10,6 @@
     "<rootDir>/dist/",
     "<rootDir>/.git/",
     "<rootDir>/.vscode/",
-    "<rootDir>/.vscode/",	
     "<rootDir>/.circleci/"
   ]
 }

@@ -1,3 +1,3 @@
-export async function dummy(): Promise<string> {
-  return `Yummy dummy!`
+export async function identity<T>(value: T): Promise<T> {
+  return value
 }

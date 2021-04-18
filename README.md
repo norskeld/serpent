@@ -15,7 +15,7 @@ What's inside:
 
 - **[TypeScript](https://www.typescriptlang.org)** + **[ts-node](https://github.com/TypeStrong/ts-node)**: no bundlers whatsoever. Use **Rollup** for libraries. :)
 - **[Jest](https://jestjs.io)**: for testing, really basic setup with `watch` and `coverage` scripts.
-- **[Commitizen](https://github.com/commitizen/cz-cli)**: `npm run cz` for interactive committing.
+- **[Commitizen](https://github.com/commitizen/cz-cli)**: you can run `npm run cz` for interactive committing or create alias for `git-cz` (should be globally installed).
 - **[Commitlint](https://github.com/conventional-changelog/commitlint)**: for linting your commits, uses [Angular preset](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular) by default.
 - **[Semantic Release](https://semantic-release.gitbook.io/semantic-release/)**: for generating *CHANGELOG.md*, releasing and publishing to npm.
 - **[ESLint](https://eslint.org/)**: with TypeScript and Prettier plugins, extends only built-in recommended configs.
@@ -51,4 +51,4 @@ To use badges for CircleCI, npm and Dependabot, simply add them above, replacing
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/) by default, but you may want to [consider using something else](https://choosealicense.com/).

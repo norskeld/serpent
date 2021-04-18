@@ -1,5 +1,5 @@
 {
-  "name": "@arcdelta/serpent",
+  "name": "@norskeld/serpent",
   "version": "1.0.0",
   "description": "Yet another TypeScript library starter with conventional goodies and automatic semantic releases.",
   "main": "./dist/index.js",

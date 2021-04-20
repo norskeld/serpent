@@ -4,7 +4,7 @@ about: Create a report about performance issues
 ---
 
 ### Describe the issue
-A clear and concise description of what the issue is. Ex. Flickering on huge lists of options in Terminal.app.
+A clear and concise description of what the issue is.
 
 ### Repro steps
 Steps to reproduce the behavior.

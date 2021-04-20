@@ -1,6 +1,6 @@
 {
   "preset": "ts-jest",
-  "testMatch": ["**/__tests__/**/*.ts", "**/?(*.)+(spec|test).ts"],
+  "testMatch": ["**/__tests__/**/*.ts", "**/*.(spec|test).ts"],
   "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
   "coverageDirectory": "coverage",
   "coverageReporters": ["html", "lcov", "text"],

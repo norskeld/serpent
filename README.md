@@ -1,4 +1,4 @@
-# :snake: serpent
+# `〜` serpent
 
 [![Semantic Release](https://img.shields.io/badge/semantic%20release%20✓-17191D?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![Commitizen Friendly](https://img.shields.io/badge/commitizen%20friendly%20✓-17191D?style=flat-square)](http://commitizen.github.io/cz-cli/)
@@ -27,9 +27,9 @@ What's inside:
 
 Also (these can be deleted right away if you don't need them):
 
-- **CircleCI**: very basic config for testing and building on **node@14** and releasing to NPM with **semantic-release**.
-- **Github**: generic issue templates for features, performance and bug reports.
-- **Visual Studio Code**: some handy settings like auto-fixing and formatting, JSON schemas mappings and ruler which matches the prettier settings (`100` by default).
+- **[.circleci](.circleci/)**: very basic config for testing and building on **node@14** and releasing to NPM with **semantic-release**.
+- **[.github](.github/)**: generic issue templates for features, performance and bug reports.
+- **[.vscode](.vscode/)**: some handy settings for Visual Studio Code, like auto-fixing and formatting, JSON schema mappings and a ruler, which matches the prettier settings (`100` by default).
 
 ## Edits
 

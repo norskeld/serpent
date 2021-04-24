@@ -1,13 +1,13 @@
 # :snake: serpent
 
-[![Semantic Release](https://img.shields.io/badge/semantic-release-e10079)](https://github.com/semantic-release/semantic-release)
-[![Commitizen Friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Semantic Release](https://img.shields.io/badge/semantic%20release%20✓-17191D?style=flat-square)](https://github.com/semantic-release/semantic-release)
+[![Commitizen Friendly](https://img.shields.io/badge/commitizen%20friendly%20✓-17191D?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
-Yet another TypeScript library starter with conventional goodies and automatic semantic releases.
+> Yet another TypeScript library starter with conventional goodies and automatic semantic releases.
 
 ## Usage
 
-Create your own repo [using this one as a template](https://github.com/arcdelta/serpent/generate), clone it, [make necessary changes](#edits), install dependencies and you are set.
+Create your own repo [using this one as a template](https://github.com/norskeld/serpent/generate), clone it, [make necessary changes](#edits), install dependencies and you are set.
 
 ## Features
 
@@ -27,9 +27,9 @@ What's inside:
 
 Also (these can be deleted right away if you don't need them):
 
-- **CircleCI**: very basic config for testing on **node@12** and releasing via **semantic-release**.
+- **CircleCI**: very basic config for testing and building on **node@14** and releasing to NPM with **semantic-release**.
 - **Github**: generic issue templates for features, performance and bug reports.
-- **Visual Studio Code**: some handy settings like auto-fixing and formatting, JSON Schemas mappings and ruler which matches the prettier settings (`100` by default).
+- **Visual Studio Code**: some handy settings like auto-fixing and formatting, JSON schemas mappings and ruler which matches the prettier settings (`100` by default).
 
 ## Edits
 

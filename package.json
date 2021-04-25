@@ -13,17 +13,20 @@
     "cz": "git-cz",
     "build": "tsc",
     "build:watch": "tsc -w",
+    "postversion": "ts-node scripts/update.ts",
     "prebuild": "rimraf dist",
-    "test": "jest",
-    "test:coverage": "jest --coverage=true",
-    "test:watch": "jest --watch",
-    "test:init": "jest --init",
-    "style": "npm run style:format && npm run style:lint",
-    "style:format": "prettier --write \"**/*.{js,ts,json}\"",
-    "style:lint": "eslint src --ext .js,.ts --fix",
+    "prepare": "husky install",
     "release": "npx semantic-release",
     "release:dry": "npx semantic-release --dry-run",
-    "prepare": "husky install"
+    "style:check": "npm run style:format:check && npm run style:lint:check",
+    "style:fix": "npm run style:format:fix && npm run style:lint:fix",
+    "style:format:check": "prettier --check \"**/*.{js,ts,json}\"",
+    "style:format:fix": "prettier --write \"**/*.{js,ts,json}\"",
+    "style:lint:check": "eslint --ext .js,.ts .",
+    "style:lint:fix": "eslint --fix --ext .js,.ts .",
+    "test": "jest",
+    "test:coverage": "jest --coverage=true",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -46,7 +49,7 @@
   ],
   "author": {
     "name": "Vladislav Mamon",
-    "email": "hello@arcdelta.dev"
+    "email": "hello@vm.codes"
   },
   "license": "MIT",
   "bugs": {

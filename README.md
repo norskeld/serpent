@@ -1,7 +1,7 @@
-# `〜` serpent
+# 〜 serpent
 
-[![Semantic Release](https://img.shields.io/badge/semantic%20release%20✓-17191D?style=flat-square)](https://github.com/semantic-release/semantic-release)
-[![Commitizen Friendly](https://img.shields.io/badge/commitizen%20friendly%20✓-17191D?style=flat-square)](http://commitizen.github.io/cz-cli/)
+[![Semantic Release](https://img.shields.io/badge/semantic_release-black)](https://github.com/semantic-release/semantic-release)
+[![Commitizen Friendly](https://img.shields.io/badge/commitizen_friendly-black)](http://commitizen.github.io/cz-cli/)
 
 > Yet another TypeScript library starter with conventional goodies and automatic semantic releases.
 
@@ -49,6 +49,8 @@ To use badges for CircleCI, npm and Dependabot, simply add them above, replacing
 ![Dependabot](https://flat.badgen.net/dependabot/<user>/<repo>?icon=dependabot)
 ```
 
+If you want to use those stylish black badges, just use these params: `?style=flat&colorA=black&colorB=black`.
+
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/) by default, but you may want to [consider using something else](https://choosealicense.com/).
+[MIT](LICENSE) by default, but you may want to [consider using something else](https://choosealicense.com/).

@@ -13,7 +13,6 @@
     "cz": "git-cz",
     "build": "tsc",
     "build:watch": "tsc -w",
-    "postversion": "ts-node scripts/update.ts",
     "prebuild": "rimraf dist",
     "prepare": "husky install",
     "release": "npx semantic-release",

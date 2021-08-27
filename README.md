@@ -36,17 +36,17 @@ Also (these can be deleted right away if you don't need them):
 You'll have to make some changes first. (Maybe I'll automate this with some `postinstall` script and CLI...)
 
 - [README.md](README.md): change as you want, you may want to check [this site](https://www.makeareadme.com/) and [this awesome-readme list](https://github.com/matiassingers/awesome-readme) for examples of good readmes.
+- [LICENSE](LICENSE): change as you want and don't forget to mention it here, in README.
 - [package.json](package.json): change `name`, `description`, `repository.url`, `keywords`, `author`, `bugs.url`, `homepage`.
 - [.circleci/config.yml](.circleci/config.yml): either remove this, replace with your own CI or change as you need. Semantic-release [has recipes and instructions](https://semantic-release.gitbook.io/semantic-release/recipes/recipes) for popular CI services.
 
 ## Badges
 
-To use badges for CircleCI, npm and Dependabot, simply add them above, replacing `<user>`, `<repo>` and `<package>` accordingly.
+To use badges for **CircleCI** and **npm**, simply add them above, replacing `<user>`, `<repo>` and `<package>` accordingly.
 
 ```markdown
 [![CircleCI](https://img.shields.io/circleci/build/github/<user>/<repo>/master)](https://circleci.com/gh/<user>/<repo>/tree/master)
 [![npm](https://img.shields.io/npm/v/<user>/<package>?label=npm)](https://www.npmjs.com/package/<user>/<package>)
-![Dependabot](https://flat.badgen.net/dependabot/<user>/<repo>?icon=dependabot)
 ```
 
 If you want to use those stylish black badges, just use these params: `?style=flat&colorA=black&colorB=black`.

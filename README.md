@@ -1,43 +1,78 @@
 # `〜` serpent
 
-[![Semantic Release](https://img.shields.io/badge/semantic_release-black?style=flat-square)](https://github.com/semantic-release/semantic-release)
-[![Conventional Commits](https://img.shields.io/badge/conventional_commits-black?style=flat-square)](https://conventionalcommits.org)
+<!-- Uncomment & replace owner/repo. -->
+
+<!-- [![Build/Test](https://img.shields.io/github/workflow/status/norskeld/serpent/test?style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/norskeld/serpent/actions 'Build and test workflows') -->
+<!-- [![Coverage](https://img.shields.io/coveralls/github/norskeld/serpent?style=flat-square&colorA=22272d&colorB=22272d)](https://coveralls.io/github/norskeld/serpent 'Test coverage') -->
+<!-- [![NPM](https://img.shields.io/npm/v/@nrsk/serpent?style=flat-square&colorA=22272d&colorB=22272d)](https://npm.im/@nrsk/serpent 'This package on NPM') -->
+<!-- [![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@nrsk/serpent?style=flat-square&colorA=22272d&colorB=22272d&label=minzipped)](https://bundlephobia.com/package/@nrsk/serpent) -->
+<!-- ![Tree Shaking](https://img.shields.io/static/v1?label=tree+shaking&message=✔&style=flat-square&colorA=22272d&colorB=22272d) -->
+
+[![Supported Node Versions](https://img.shields.io/static/v1?label=node&message=14+|+16+|+18&style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/norskeld/sigma/blob/master/package.json#L35 'Supported Node versions')
+[![Semantic Release](https://img.shields.io/static/v1?label=semantic+release&message=✔&style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/semantic-release/semantic-release 'This package uses semantic release to handle releasing, versioning, changelog generation and tagging')
+[![Conventional Commits](https://img.shields.io/static/v1?label=conventional+commits&message=✔&style=flat-square&colorA=22272d&colorB=22272d)](https://conventionalcommits.org 'This package follows the conventional commits spec and guidelines')
 
 Yet another TypeScript library starter with conventional goodies and automatic semantic releases.
 
 ## Usage
 
-Create your own repo [using this one as a template](https://github.com/norskeld/serpent/generate), clone it, [make necessary changes](#edits), install dependencies and you are set.
+Create your own repo [using this one as a template][use-template], clone it, [make necessary changes](#edits), install dependencies and you are set.
 
 ## Features
 
 What's inside:
 
-- **[TypeScript](https://www.typescriptlang.org)**: no bundlers whatsoever. Use **rollup** or **esbuild** for production. :)
-- **[Jest](https://jestjs.io)**: for testing, really basic setup with TypeScript support.
-- **[Commitlint](https://github.com/conventional-changelog/commitlint)**: for linting your commits, uses [Angular preset](https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular) by default.
-- **[Semantic Release](https://semantic-release.gitbook.io/semantic-release/)**: for generating _CHANGELOG.md_, releasing and publishing to npm.
-- **[ESLint](https://eslint.org/)**: with TypeScript and Prettier plugins, extends only built-in recommended configs.
-- **[Prettier](https://prettier.io)**: very basic config, feel free to adjust as you want.
-- **[Husky](https://github.com/typicode/husky)** + **[lint-staged](https://github.com/okonet/lint-staged)**: for fixing and formatting your code before committing.
-- **[EditorConfig](https://editorconfig.org)**: handy little thing.
+- **[TypeScript]** with **[tsup]** for bundling (CJS/ESM) and [tsx] (for executing `.ts` files).
+- **[Vitest]**: for testing, by default it runs in watch mode (not in CI though).
+- **[Commitlint]**: for linting commits, uses [Angular preset][commitlint-preset] by default.
+- **[Semantic Release][semantic-release]**: for generating _CHANGELOG.md_, creating GitHub releases and publishing to npm.
+- **[ESLint]**: with TypeScript and Prettier plugins, extends only built-in recommended configs.
+- **[Prettier]**: very basic config, feel free to adjust as you want.
+- **[Husky]** + **[lint-staged]**: for fixing and formatting your code before committing.
+- **[EditorConfig]**: handy little thing to make things a bit more consistent.
 
-> I highly recommend you install plugins for **ESLint**, **Prettier** and **EditorConfig** and configure your IDE to use **local TypeScript installation**.
+> **Note**
+>
+> Do not forget to install plugins for **ESLint**, **Prettier** and **EditorConfig** and configure your IDE to use **local TypeScript installation**.
 
 Also (these can be deleted right away if you don't need them):
 
 - **[.vscode](.vscode/)**: some handy settings for Visual Studio Code, like auto-fixing and formatting, JSON schema mappings and a ruler, which matches the prettier settings (`100` by default).
 - **[.github/workflows](.github/workflows)**: basic configs for testing and building on **node@16** and releasing to **npm** with **semantic-release**.
 
+And finally:
+
+- **[.scripts/release](.scripts/release.ts)**: custom script to help [Semantic Release][semantic-release] produce flat and tidy tarballs.
+
 ## Edits
 
 You'll have to make some changes right after generating your own repository using this template.
 
 - [package.json](package.json): change `name`, `description`, `repository.url`, `keywords`, `author`, `bugs.url`, `homepage`.
-- [.github/workflows/\*.yml](.github/workflows): either remove these, replace with your own CI configuration or change as you need. **semantic-release** [has recipes and instructions](https://semantic-release.gitbook.io/semantic-release/recipes/recipes) for popular CI services.
-- [README.md](README.md): change as you want, you may want to check [this site](https://www.makeareadme.com/) and [this awesome-readme list](https://github.com/matiassingers/awesome-readme) for examples of good readmes.
+- [.github/workflows/\*.yml](.github/workflows): either remove these, replace with your own CI configuration or change as you need. **semantic-release** [has recipes and instructions][semantic-recipes] for popular CI services.
+- [README.md](README.md): change as you want, you may want to check [this site] and [this awesome-readme list] for examples of good readmes.
 - [LICENSE](LICENSE): change as you want and don't forget to mention it in README.
 
 ## License
 
-[MIT](LICENSE) by default, but you may want to [consider using something else](https://choosealicense.com/).
+[MIT](LICENSE) by default, but you may want to [consider using something else][choose-license].
+
+<!-- Links. -->
+
+[use-template]: https://github.com/norskeld/serpent/generate
+[typescript]: https://typescriptlang.org
+[tsup]: https://github.com/egoist/tsup
+[tsx]: https://github.com/esbuild-kit/tsx
+[vitest]: https://vitest.dev
+[commitlint]: https://github.com/conventional-changelog/commitlint
+[commitlint-preset]: https://github.com/conventional-changelog/commitlint/tree/master/@commitlint/config-angular
+[semantic-release]: https://semantic-release.gitbook.io/semantic-release
+[eslint]: https://eslint.org
+[prettier]: https://prettier.io
+[husky]: https://github.com/typicode/husky
+[lint-staged]: https://github.com/okonet/lint-staged
+[editorconfig]: https://editorconfig.org
+[semantic-recipes]: https://semantic-release.gitbook.io/semantic-release/recipes/recipes
+[readme]: https://makeareadme.com
+[readme-awesome]: https://github.com/matiassingers/awesome-readme
+[choose-license]: https://choosealicense.com

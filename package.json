@@ -2,25 +2,39 @@
   "name": "@nrsk/serpent",
   "version": "1.0.0",
   "description": "Yet another TypeScript library starter with conventional goodies and automatic semantic releases.",
-  "main": "./dist/index.js",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.cjs",
+      "types": "./index.d.ts"
+    }
+  },
   "files": [
-    "dist"
+    "CHANGELOG.md",
+    "*.d.ts",
+    "*.cjs*",
+    "*.js*"
   ],
   "engines": {
-    "node": ">=16"
+    "node": "^14.16.0 || ^16.10.0 || ^18.0.0"
   },
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc -w",
-    "fmt:prettier": "prettier --write \"**/*.{js,ts,json}\"",
+    "build": "tsup",
     "fmt:lint": "eslint --fix --ext .js,.ts .",
+    "fmt:prettier": "prettier --write \"**/*.{js,ts,json}\"",
+    "postversion": "tsx ../scripts/release.ts restore",
     "prebuild": "rimraf dist",
     "prepare": "is-ci || husky install",
+    "prerelease": "tsx scripts/release.ts prepare",
     "release": "npx semantic-release",
     "release:dry": "npx semantic-release --dry-run",
-    "test": "jest",
-    "test:coverage": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test": "vitest",
+    "test:coverage": "vitest --coverage"
   },
   "repository": {
     "type": "git",
@@ -48,25 +62,26 @@
   },
   "homepage": "https://github.com/norskeld/serpent#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
+    "@commitlint/cli": "^17.2.0",
     "@nrsk/config-conventional": "^1.0.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@types/jest": "^28.1.4",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "eslint": "^8.19.0",
+    "@types/is-ci": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.42.0",
+    "@typescript-eslint/parser": "^5.42.0",
+    "@vitest/coverage-istanbul": "^0.24.5",
+    "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "husky": "^8.0.1",
     "is-ci": "^3.0.1",
-    "jest": "^28.1.2",
-    "lint-staged": "^12.4.2",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.3",
-    "ts-jest": "^28.0.5",
-    "ts-node": "^10.8.2",
-    "typescript": "^4.7.4"
+    "semantic-release": "^19.0.5",
+    "tsup": "^6.3.0",
+    "tsx": "^3.11.0",
+    "typescript": "^4.8.4",
+    "vitest": "^0.24.5"
   },
   "commitlint": {
     "extends": [

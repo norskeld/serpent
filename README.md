@@ -50,7 +50,7 @@ You'll have to make some changes right after generating your own repository usin
 
 - [package.json](package.json): change `name`, `description`, `repository.url`, `keywords`, `author`, `bugs.url`, `homepage`.
 - [.github/workflows/\*.yml](.github/workflows): either remove these, replace with your own CI configuration or change as you need. **semantic-release** [has recipes and instructions][semantic-recipes] for popular CI services.
-- [README.md](README.md): change as you want, you may want to check [this site] and [this awesome-readme list] for examples of good readmes.
+- [README.md](README.md): change as you want, you may want to check [this site][readme] and [this awesome-readme list][readme-awesome] for examples of good readmes.
 - [LICENSE](LICENSE): change as you want and don't forget to mention it in README.
 
 ## License

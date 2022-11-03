@@ -27,7 +27,7 @@ What's inside:
 - **[ESLint]**: with TypeScript and Prettier plugins, extends only built-in recommended configs.
 - **[Prettier]**: very basic config, feel free to adjust as you want.
 - **[commitlint]**: for linting commits, by default it uses [Angular preset][commitlint-preset].
-- **[semantic-release]**: for generating `CHANGELOG.md`, creating GitHub tags and releases, versioning, publishing to **npm**, and so on.
+- **[semantic-release]**: for generating `CHANGELOG.md` and [handling the whole releasing process][semantic-release-highlights] based on [conventional commits][cc].
 - **[husky]** + **[lint-staged]**: for fixing and formatting your code before committing.
 - **[EditorConfig]**: handy little thing to make things a bit more consistent.
 
@@ -72,3 +72,5 @@ You'll have to make some changes right after generating your own repository usin
 [readme]: https://makeareadme.com
 [readme-awesome]: https://github.com/matiassingers/awesome-readme
 [choose-license]: https://choosealicense.com
+[semantic-release-highlights]: https://semantic-release.gitbook.io/semantic-release/#highlights
+[cc]: https://conventionalcommits.org

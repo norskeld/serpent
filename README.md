@@ -3,7 +3,7 @@
 <!-- Uncomment & replace owner/repo. -->
 
 <!-- [![Build/Test](https://img.shields.io/github/workflow/status/norskeld/serpent/test?style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/norskeld/serpent/actions 'Build and test workflows') -->
-<!-- [![Coverage](https://img.shields.io/coveralls/github/norskeld/serpent?style=flat-square&colorA=22272d&colorB=22272d)](https://coveralls.io/github/norskeld/serpent 'Test coverage') -->
+<!-- [![Coverage](https://img.shields.io/coverallsCoverage/github/norskeld/serpent?style=flat-square&colorA=22272d&colorB=22272d)](https://coveralls.io/github/norskeld/serpent 'Test coverage') -->
 <!-- [![NPM](https://img.shields.io/npm/v/@nrsk/serpent?style=flat-square&colorA=22272d&colorB=22272d)](https://npm.im/@nrsk/serpent 'This package on NPM') -->
 <!-- [![Bundlephobia](https://img.shields.io/bundlephobia/minzip/@nrsk/serpent?style=flat-square&colorA=22272d&colorB=22272d&label=minzipped)](https://bundlephobia.com/package/@nrsk/serpent) -->
 <!-- ![Tree Shaking](https://img.shields.io/static/v1?label=tree+shaking&message=✔&style=flat-square&colorA=22272d&colorB=22272d) -->

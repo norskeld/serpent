@@ -21,7 +21,7 @@
     "*.js*"
   ],
   "engines": {
-    "node": ">=18 <=20"
+    "node": ">=20"
   },
   "scripts": {
     "build": "tsup",
@@ -29,7 +29,7 @@
     "fmt:prettier": "prettier --write \"**/*.{js,ts,json}\"",
     "postversion": "tsx ../.scripts/release.ts restore",
     "prebuild": "rimraf dist",
-    "prepare": "is-ci || husky install",
+    "prepare": "husky",
     "prerelease": "tsx .scripts/release.ts prepare",
     "release": "npx semantic-release",
     "release:dry": "npx semantic-release --dry-run",
@@ -62,26 +62,26 @@
   },
   "homepage": "https://github.com/norskeld/serpent#readme",
   "devDependencies": {
-    "@commitlint/cli": "^18.0.0",
+    "@commitlint/cli": "^19.2.1",
     "@nrsk/config-conventional": "^1.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/is-ci": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.9.0",
-    "@typescript-eslint/parser": "^6.9.0",
-    "@vitest/coverage-istanbul": "^0.34.6",
-    "eslint": "^8.52.0",
-    "eslint-config-prettier": "^9.0.0",
-    "husky": "^8.0.3",
+    "@types/is-ci": "^3.0.4",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "@vitest/coverage-istanbul": "^1.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.0.11",
     "is-ci": "^3.0.1",
-    "lint-staged": "^15.0.2",
-    "prettier": "^3.0.3",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
     "rimraf": "^5.0.5",
-    "semantic-release": "^22.0.5",
-    "tsup": "^7.2.0",
-    "tsx": "^3.14.0",
-    "typescript": "^5.2.2",
-    "vitest": "^0.34.6"
+    "semantic-release": "^23.0.5",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2",
+    "vitest": "^1.4.0"
   },
   "commitlint": {
     "extends": [

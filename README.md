@@ -36,7 +36,7 @@ Also:
 - **[.vscode](.vscode)**: some handy settings for Visual Studio Code.
 - **[.scripts/release](.scripts/release.ts)**: custom script to help **semantic-release** produce flat and tidy tarballs.
 - **[.github/workflows](.github/workflows)**: basic configs for:
-  - Testing and building on **node@16**;
+  - Testing and building on **node@20**;
   - Releasing to **npm** with **semantic-release**.
 
 ## Edits
